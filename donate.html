@@ -155,6 +155,10 @@ flexibility(document.documentElement);
 .ast-primary-header-bar a {
   color: #ffffff !important;
 }
+/* Fix white text on white background in light mode - make paragraphs black */
+html:not([data-wp-dark-mode-active]) .entry-content p {
+  color: #000000 !important;
+}
 </style>
 </head>
 

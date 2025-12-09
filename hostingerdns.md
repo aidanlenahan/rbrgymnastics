@@ -3,6 +3,7 @@
 | Type  | Name | Content                |
 | ----- | ---- | ---------------------- |
 | ALIAS | @    | aidanlenahan.github.io |
+| CNAME | www  | aidanlenahan.github.io |
 ## Recommended
 | Type  | Name | Content                |
 | ----- | ---- | ---------------------- |

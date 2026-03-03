@@ -148,10 +148,35 @@ flexibility(document.documentElement);
 .entry-content, .entry-content p, .entry-content a:not(.menu-link) {
   color: #000000 !important;
 }
+/* Fix transparent header and logo display */
+.ast-theme-transparent-header .main-header-bar {
+  background-color: transparent !important;
+}
+.ast-theme-transparent-header .site-header {
+  position: absolute !important;
+  width: 100% !important;
+  z-index: 999 !important;
+}
+/* Hide mobile logo on desktop, show only transparent logo */
+.ast-transparent-mobile-logo {
+  display: none !important;
+}
+.transparent-custom-logo {
+  display: inline-block !important;
+}
+/* Show only mobile logo on mobile */
+@media (max-width: 768px) {
+  .transparent-custom-logo {
+    display: none !important;
+  }
+  .ast-transparent-mobile-logo {
+    display: inline-block !important;
+  }
+}
 </style>
 </head>
 
-<body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="wp-singular page-template-default page page-id-3000 wp-custom-logo wp-theme-astra ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.11.10 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled">
+<body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="wp-singular page-template-default page page-id-3000 wp-custom-logo wp-theme-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.11.10 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header">
 
 <a class="skip-link screen-reader-text" href="#content" title="Skip to content">
 		Skip to content</a>

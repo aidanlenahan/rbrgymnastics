@@ -155,10 +155,20 @@ flexibility(document.documentElement);
 .ast-primary-header-bar .menu-link,
 .ast-primary-header-bar a {
   color: #ffffff !important;
-}
-/* Force content text to be black in light mode */
+}  /* Force content text to be black in light mode */
 .entry-content, .entry-content p, .entry-content a:not(.menu-link) {
   color: #000000 !important;
+}
+/* Fix mobile menu text visibility */
+@media (max-width:921px){
+  .ast-mobile-popup-content .main-header-menu .menu-item > .menu-link,
+  .ast-mobile-header-content .main-header-menu .menu-item > .menu-link {
+    color: #000000 !important;
+  }
+  .ast-mobile-popup-content .main-navigation,
+  .ast-mobile-header-content .main-navigation {
+    background-color: #ffffff !important;
+  }
 }
 </style>
 </head>

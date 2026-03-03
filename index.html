@@ -92,6 +92,17 @@ html:not([data-wp-dark-mode-active]) figcaption.wp-element-caption,html:not([dat
 html:not([data-wp-dark-mode-active]) figcaption.wp-element-caption a,html:not([data-wp-dark-mode-active]) .wp-element-caption a{color:#000000 !important;}
 .ast-builder-menu-1 .menu-item > .menu-link{color:#ffffff !important;}
 .ast-builder-menu-1 .menu-item > .ast-menu-toggle{color:#ffffff !important;}
+/* Fix mobile menu text visibility */
+@media (max-width:921px){
+  .ast-mobile-popup-content .main-header-menu .menu-item > .menu-link,
+  .ast-mobile-header-content .main-header-menu .menu-item > .menu-link {
+    color: #000000 !important;
+  }
+  .ast-mobile-popup-content .main-navigation,
+  .ast-mobile-header-content .main-navigation {
+    background-color: #ffffff !important;
+  }
+}
 </style>
 <link rel="stylesheet" id="astra-google-fonts-css" href="https://fonts.googleapis.com/css?family=Lora%3A400%2C%7CNunito+Sans%3A600%2C400%2C700%7CForum%3A400&amp;display=fallback&amp;ver=4.11.10" media="all">
 <style id="wp-emoji-styles-inline-css">

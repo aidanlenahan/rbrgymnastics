@@ -160,6 +160,17 @@ flexibility(document.documentElement);
 html:not([data-wp-dark-mode-active]) .entry-content p {
   color: #000000 !important;
 }
+/* Fix mobile menu text visibility */
+@media (max-width:921px){
+  .ast-mobile-popup-content .main-header-menu .menu-item > .menu-link,
+  .ast-mobile-header-content .main-header-menu .menu-item > .menu-link {
+    color: #000000 !important;
+  }
+  .ast-mobile-popup-content .main-navigation,
+  .ast-mobile-header-content .main-navigation {
+    background-color: #ffffff !important;
+  }
+}
 </style>
 </head>
 

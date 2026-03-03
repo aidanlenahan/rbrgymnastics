@@ -67,6 +67,18 @@ html:not([data-wp-dark-mode-active]) .ast-footer-copyright,html:not([data-wp-dar
 .ast-builder-menu-1 .menu-item > .ast-menu-toggle {
 	color: var(--ast-global-color-2) !important;
 }
+
+/* Fix mobile menu text visibility (was white on white) */
+@media (max-width:921px){
+  .ast-mobile-popup-content .main-header-menu .menu-item > .menu-link,
+  .ast-mobile-header-content .main-header-menu .menu-item > .menu-link {
+    color: #000000 !important;
+  }
+  .ast-mobile-popup-content .main-navigation,
+  .ast-mobile-header-content .main-navigation {
+    background-color: #ffffff !important;
+  }
+}
 </style>
 <link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Lora%3A400%2C%7CNunito+Sans%3A600%2C400%2C700%7CForum%3A400&#038;display=fallback&#038;ver=4.11.10' media='all' />
 <style id='wp-emoji-styles-inline-css'>
